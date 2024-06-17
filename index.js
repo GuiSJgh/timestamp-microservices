@@ -40,7 +40,7 @@ app.get("/api/:date", function (req, res) {
   });
 });
 
-app.get("/apt", (req, res) => {
+app.get("/api", (req, res) => {
   res.json({
     unix: new Date().getTime(),
     utc: new Date().toUTCString()
